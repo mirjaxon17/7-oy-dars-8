@@ -1,0 +1,15 @@
+
+<title>Login Page</title>
+
+     <h2>Login</h2>
+     <p>Please fill out the form below to enter the site.</p>
+     <form method="post">{% csrf_token %}
+          {{ form.as_p }}
+       <button type="submit" class="btn btn-primary">Login</button>
+     </form>
+     <h4>Don't have an account? <a href="{% url 'user_register' %}" class="text-danger">Signup</a> </h4>
+
+
+
+
+

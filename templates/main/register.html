@@ -1,0 +1,11 @@
+{% load static %}
+
+Register users
+
+    <h1>Register new users</h1>
+    <p>Fill out the form below to register</p>
+    <form method="post">{% csrf_token %}
+       {{ user_form.as_p }}
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <button><a href="{% url 'login' %}">Back To Login</a></button>
